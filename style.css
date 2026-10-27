@@ -5,3 +5,18 @@
 
 /* Original PDF illustrations, added for visual source fidelity */
 .original-figure{margin:2rem auto;max-width:780px;text-align:center;break-inside:avoid}.original-figure img{max-width:100%;height:auto;display:block;margin:auto;border:1px solid #d9d3c6}.original-figure figcaption{font-size:.78rem;color:#776f61;margin-top:.45rem}
+
+
+/* Expandable left-hand book navigation */
+.sidebar .sidebar-chapter{border-bottom:1px solid var(--edge);margin:3px 0 5px}
+.sidebar .sidebar-chapter summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 10px;font-weight:650;color:#36443e;border-radius:4px}
+.sidebar .sidebar-chapter summary::-webkit-details-marker{display:none}
+.sidebar .sidebar-chapter summary:hover,.sidebar .sidebar-chapter summary:focus-visible{background:#e1e5de}
+.sidebar .sidebar-chapter summary:focus-visible{outline:2px solid #50765c}
+.sidebar .sidebar-chevron{width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);flex:none}
+.sidebar .sidebar-chapter[open] .sidebar-chevron{transform:rotate(225deg)}
+.sidebar .sidebar-sections{padding:1px 0 10px}
+.sidebar .sidebar-sections a.sidebar-chapter-title{font-size:12px;font-weight:600;padding-left:15px}
+.sidebar .sidebar-sections a.sidebar-subchapter{font-size:12px;line-height:1.5;padding:6px 8px 6px 24px}
+.sidebar .sidebar-sections a:hover,.sidebar .sidebar-sections a:focus-visible{background:#e1e5de;text-decoration:underline}
+.sidebar .sidebar-sections a.active{background:#d9dfd6;font-weight:650}
